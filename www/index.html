@@ -62,17 +62,7 @@
 
         // create element for our own video
         {
-            var getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
-            getUserMedia({ video: { height: 480, width: 640 }, audio: false }, (stream) => {
-                const myVideo = document.createElement('video');
-                document.getElementById('room-users-container').appendChild(myVideo);
-                myVideo.srcObject = stream;
-                myVideo.onloadedmetadata = function(e) {
-                    myVideo.play();
-                };
-            }, function (err) {
-                console.log('Failed to get local stream', err);
-            });
+            
         }
 
         // call new connected user, send them our video stream and get their stream back
