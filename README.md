@@ -123,3 +123,13 @@ git clone https://github.com/CSC-WebApps/PackSpaces.git
 
 3. To preview your progress, open [`./www/index.html`](./www/index.html) in your web browser (Chrome has worked more consistently in my experience).
 
+---
+
+Finished the workshop, and looking for another challenge?
+
+Our app currently only has one space and everyone is joining there. Update the backend to support multiple spaces. For example, I want to have a space at `http://localhost:3000/CSC342` and someone else might want to go to another space at `http://localhost:3000/CSC100`.
+
+Hint:
+
+This is very similar to what we already have, there some smaller changes needed to make this work (mainly in socket.io server). See socket.io [rooms documentation](https://socket.io/docs/v4/rooms/).
+
